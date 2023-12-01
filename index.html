@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="section-1 row">
+        <div class="div-1 col-6"  >
+            <img src="images/logo.png" width="88px" height="47px" class="img-1">
+            <div class="input-group mb-3 div-1_1">
+                <span class="input-group-text" id="basic-addon1"><img src="images/search.png"></span>
+                <input type="text" class="form-control input-1" placeholder="⌘ + K" aria-label="Username" aria-describedby="basic-addon1" >
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="div-2 col-5">
+            <button type="button" class="btn btn-primary btn-1 ms-4">Self sign or send to sign</button>
+            <button type="button" class="btn btn-light border-black btn-1 ms-4" style="margin-left: 10px !important;">+ Template</button>
+            <div class="div-2_1">
+                <img src="images/help.png" class="ml-1 ms-4" width="24px" height="24px">
+                <img src="images/bell.png" class="ml-1 ms-4" width="24px" height="24px">
+            </div>
+            <div class="dropdown ml-1 ms-4">
+                <button class="btn dropdown-toggle btn-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                  Alex G
+                </button>
+                <div class="div-2_3 dropdown-menu">
+                  <img src="images/avatar.png" style="margin-left: 40%; margin-bottom: 10px;">
+                  <p class="text-1">Alex Gilev</p>
+                  <p class="text-2">alex.gilev@30kstrategy.com</p>
+                  <p class="text-3">Admin</p>
+                  <hr>
+                  <img src="images/user.png" class="img-2"><p class="text-4">My Account</p>
+                  <hr>
+                  <img src="images/logout.png" class="img-2"><p class="text-4">Sign Out</p>
+                </div>
+              </div>
+        </div>
+        <ul class="nav justify-content-end" style="width: 90%;">
+          <li class="nav-item nav-item-2">
+            <img src="images/tree.png"><a class="nav-link nav-link-2" aria-current="page" href="#">Trees: 57</a>
+          </li>
+          <li class="nav-item nav-item-2">
+            <img src="images/water.png"><a class="nav-link nav-link-2" href="#">Water: 76k lt</a>
+          </li>
+          <li class="nav-item nav-item-2">
+            <img src="images/CO2.png"><a class="nav-link nav-link-2" href="#">CO2eq: 89k(kg)</a>
+          </li>
+        </ul>
+    </section>
+    
+    <section class="section-2  row position-relative">
+      <div class="div-3 col-2">
+        <p class="text-5">Favourites</p>
+        <ul class="nav flex-column">
+          <li class="nav-item nav-item-1" style="margin-bottom: 34px;">
+            <img src="images/star.png"><a class="nav-link nav-link-1" aria-current="page" href="#" onclick="changeId(this)" id="1">My favourites</a>
+          </li>
+        </ul>
+        <p class="text-5">Navigation</p>
+        <ul class="nav flex-column" id="nav-1">
+          <li class="nav-item nav-item-1">
+            <img src="images/home.png"><a class="nav-link nav-link-1" aria-current="page" href="#" id="active" onclick="changeId(this)">Home</a>
+          </li>
+          <li class="nav-item nav-item-1">
+            <img src="images/files.png"><a class="nav-link nav-link-1" href="#" onclick="changeId(this)" id="3">Templates</a>
+          </li>
+          <li class="nav-item nav-item-1">
+            <img src="images/progress.png"><a class="nav-link nav-link-1" href="#" onclick="changeId(this)" id="4">Files in progress</a>
+          </li>
+          <li class="nav-item nav-item-1">
+            <img src="images/lock.png"><a class="nav-link nav-link-1" href="#" onclick="changeId(this)" id="5">Vault</a>
+          </li>
+          <li class="nav-item nav-item-1">
+            <img src="images/trash.png"><a class="nav-link nav-link-1" href="#" onclick="changeId(this)" id="6">Trash</a>
+          </li>
+        </ul>
+        <div class="div-3_1 position-absolute bottom-0">
+          <ul class="nav flex-column" id="nav-1">
+            <li class="nav-item nav-item-1">
+              <img src="images/settings.png"><a class="nav-link nav-link-1" href="#" onclick="changeId(this)" id="7">Settings</a>
+            </li>
+            <li class="nav-item nav-item-1">
+              <img src="images/collapse.png"><a class="nav-link nav-link-1" href="#" style="font-size: 12px; line-height: 14px;" onclick="changeId(this)" id="8">Collapse menu</a>
+            </li>
+          </ul>
+          <hr style="width: 190px;">
+          <p class="text-6">© Unisign 2023.<br>
+            Navigation Framework Prototype</p>
+        </div>
+      </div>
+      <div class="div-4 col-9 row">
+        <div class="div-4_1 col-7">
+          <p class="text-7">Unisign Key Metrics</p>
+          <hr class="hor-line">
+          <div class="div-4_2 position-relative">
+            <p class="text-8">Usage details</p>
+            <p class="text-9">26.98<span class="text-10">GB</span></p>
+            <span class="text-11">of 32GB</span>
+            <img src="images/chart.png" class="img-3">
+          </div>
+        </div>
+        <div class="div-4_3"></div>
+        <div class="div-4_4 col-4">
+          <ul class="nav flex-column">
+            <li class="nav-item nav-item-3" style="margin-top: 0px !important;">
+              <p class="text-12">Water</p>
+              <p class="text-13">345.9K</p>
+              <p class="text-12">Litres saved</p>
+            </li>
+            <li class="nav-item nav-item-3">
+              <p class="text-12">CO2</p>
+              <p class="text-13">345.8 K</p>
+              <p class="text-12">kg not emmited</p>
+            </li>
+            <li class="nav-item nav-item-3">
+              <p class="text-12">Pages</p>
+              <p class="text-13">345.8M</p>
+              <p class="text-12">Digitised</p>
+            </li>
+            <li class="nav-item nav-item-3">
+              <p class="text-12">Trees</p>
+              <p class="text-13">765</p>
+              <p class="text-12">Trees saved</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      function changeId(button) {
+        let id = button.id
+        if (id != "active") {
+          document.getElementById("active").id = "xxx"
+          document.getElementById(`${id}`).id = "active"
+          document.getElementById("xxx").id = `${id}`
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
